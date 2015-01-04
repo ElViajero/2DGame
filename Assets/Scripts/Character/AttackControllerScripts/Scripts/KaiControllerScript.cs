@@ -12,7 +12,7 @@ public class KaiControllerScript : MonoBehaviour,IAttackController{
 	GameObject kiPoint; // reference to a fixed point at which the kai ball will be generated.
 
 	bool isAttackCharging; // flag to indicate whether the kai ball is growing.
-	Vector3 minimumKaiSize; // smalles possible Kai ball.
+	Vector3 minimumKaiSize; // smallest possible Kai ball.
 	Vector3 initialKaiPosition; // initial position when Kai ball is hidden.
 
 	float scaleFactor; // How much we want the Kai ball's size to increase per update.
@@ -21,12 +21,11 @@ public class KaiControllerScript : MonoBehaviour,IAttackController{
 	float kiPointTranslate; 
 
 	bool isFired; // Tells us whether the ki blast has been fired.
-		// If so, we shouldn't be able to control it anymore.s
+		// If so, we shouldn't be able to control it anymore.
 
 
 	// Use this for initialization
-
-	void Start () {
+	void Start () { 
 		character = GameObject.FindGameObjectWithTag("Character");
 		characterArmMovementControllerInstance = 
 			character.GetComponent<CharacterArmMovementControllerScript>();
@@ -140,7 +139,7 @@ public class KaiControllerScript : MonoBehaviour,IAttackController{
 	public void OnCollisionEnter2D(Collision2D other){
 	
 		if(!other.gameObject.tag.Equals("Character")) // this is to ensure that the 
-			Debug.Log("Colliding....");				 //collision is not with the player himself.
+			Debug.Log("Colliding....");				 // collision is not with the player himself.
 
 
 

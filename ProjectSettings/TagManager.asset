@@ -8,6 +8,7 @@ TagManager:
   - Arm
   - Ki
   - KiPoint
+  - Attack
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   User Layer 8: Character
   User Layer 9: Ground
   User Layer 10: Ki
-  User Layer 11: 
+  User Layer 11: Attack
   User Layer 12: 
   User Layer 13: 
   User Layer 14: 
